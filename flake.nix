@@ -12,6 +12,7 @@
 
   outputs =
     {
+      self,
       nixpkgs,
       ags,
     }:
