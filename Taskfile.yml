@@ -1,0 +1,6 @@
+version: "3"
+tasks:
+  watch:
+    desc: Hot-reload the shell on file changes
+    cmds:
+      - watchexec --exts ts,tsx --restart -- sh -c "ags quit || true && ags run app.ts"
