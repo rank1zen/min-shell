@@ -1,5 +1,5 @@
 {
-  description = "My Awesome Desktop Shell";
+  description = "A Minimal Desktop Shell";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
@@ -19,7 +19,7 @@
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
-      pname = "my-shell";
+      pname = "min-shell";
       entry = "app.ts";
 
       astalPackages = with ags.packages.${system}; [
@@ -66,6 +66,8 @@
             (ags.packages.${system}.default.override {
               inherit extraPackages;
             })
+            pkgs.go-task
+            pkgs.watchexec
           ];
         };
       };
