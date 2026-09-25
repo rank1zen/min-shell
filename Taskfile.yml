@@ -3,4 +3,4 @@ tasks:
   watch:
     desc: Hot-reload the shell on file changes
     cmds:
-      - watchexec --exts ts,tsx --restart -- sh -c "ags quit || true && ags run app.ts"
+      - watchexec --exts ts,tsx,scss --restart -- sh -c "ags quit || true && ags run app.ts"

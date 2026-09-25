@@ -5,16 +5,13 @@ $bg-color: #{"@theme_bg_color"};
 window.Bar {
   background: transparent;
   color: $fg-color;
-  font-weight: bold;
-
   > centerbox {
-    background: $bg-color;
-    border-radius: 10px;
+    background: transparent;
     margin: 8px;
   }
 
   button {
-    border-radius: 8px;
-    margin: 2px;
+    background: $bg-color;
+    border-radius: 12px;
   }
 }
